@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .field {
+        border: 2px solid tomato;
+      }
+
+      .field:hover .bat {
+        transform: rotate(-60deg);
+        transform-origin: top right;
+      }
+
+      .field:hover .ball {
+        transform: translate(500px);
+      }
+
+      .ball {
+        width: 35px;
+        height: 35px;
+        background-color: red;
+        border-radius: 20px;
+        position: relative;
+        left: 435px;
+        transition: transform 1s ease-out 0.5s;
+      }
+
+      .bat {
+        transition: transform 0.5s ease-in;
+      }
+    </style>
+    <title>Cricket my love games</title>
+  </head>
+  <body>
+    <div class="field">
+      <img class="bat" src="./image/soto_bat-removebg-preview.png" alt="" />
+
+      <div class="ball"></div>
+    </div>
+  </body>
+</html>
